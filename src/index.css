@@ -7,4 +7,12 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
 }
