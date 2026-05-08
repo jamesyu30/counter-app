@@ -33,7 +33,7 @@ function App() {
               ) : (
                 <Display count={vanillaCount} />
             )}
-            <Button label="Increment" onClick={incrementVanilla} />
+            <Button label="Vote" onClick={incrementVanilla} />
           </div>
           <div>
             <h2 className='chocolate-header'>Chocolate</h2>
@@ -42,7 +42,7 @@ function App() {
             ) : (
               <Display count={chocolateCount} />
             )}
-            <Button label="Increment" onClick={incrementChocolate} />
+            <Button label="Vote" onClick={incrementChocolate} />
           </div>
           <div>
             <h2 className='strawberry-header'>Strawberry</h2>
@@ -51,7 +51,7 @@ function App() {
             ) : (
               <Display count={strawberryCount} />
             )}
-            <Button label="Increment" onClick={incrementStrawberry} />
+            <Button label="Vote" onClick={incrementStrawberry} />
           </div>
       </div>
     </>
