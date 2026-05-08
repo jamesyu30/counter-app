@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Display from './Display';
 import Button from './Button';
+import Stats from './Stats';
 
 function App() {
   const [vanillaCount, setVanillaCount] = useState(0);
@@ -54,6 +55,11 @@ function App() {
             <Button label="Vote" onClick={incrementStrawberry} />
           </div>
       </div>
+      <Stats 
+        vanillaCount={vanillaCount} 
+        chocolateCount={chocolateCount} 
+        strawberryCount={strawberryCount} 
+      />
     </>
   )
 }

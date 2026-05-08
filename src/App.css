@@ -81,6 +81,61 @@ button:active {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.stats {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.bars {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.stats-header {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.total-votes {
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.flavor-stat {
+  font-size: 1.1rem;
+  color: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: normal;
+}
+
+.flavor-stat.popular {
+  background: rgba(255, 215, 0, 0.4);
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FFD700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  transform: scale(1.05);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -111,6 +166,19 @@ button:active {
 
   p {
     padding: 15px;
+  }
+
+  .stats {
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .stats-header {
+    font-size: 1.5rem;
+  }
+
+  .flavor-stat.popular {
+    font-size: 1.1rem;
   }
 }
 
@@ -147,5 +215,29 @@ button:active {
   p {
     padding: 10px;
     font-size: 0.9rem;
+  }
+
+  .stats {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .stats-header {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+
+  .total-votes {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .flavor-stat {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .flavor-stat.popular {
+    font-size: 1rem;
   }
 }
